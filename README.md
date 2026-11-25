@@ -1,3 +1,32 @@
+Changes: 26/11/2026
+
+IA / DirectML (AMD)
+Inferencia ONNX con DirectML (device 0); fallback a CPU.
+Label de settings corregido: GPU (DirectML) — recomendado.
+Confianza y ayudas con valores recomendados (≈40–50%).
+UX / localización
+Nuevo idioma es-ES (menús, settings, errores, mapeo de clases).
+Español por defecto / preferido en Windows en español.
+Textos de ayuda: 1 modelo, GPU DirectML, confianza, propagación con revisión manual.
+Stack / dependencias tocadas
+YoutubeExplode 6.6.3
+yt-dlp + ffmpeg en tools/
+Microsoft.ML.OnnxRuntime.DirectML + Microsoft.AI.DirectML
+OpenCvSharp como fallback de frames
+Flujo recomendado (para el README)
+Clases del proyecto: head + body (no hace falta etiquetar coches/farolas → son background).
+Mapear modelo: head→head, enemy→body; nan = ignorar clase.
+Settings: GPU (DirectML), confianza 40–50%, 1 modelo.
+YouTube: HD + “quitar casi-duplicados”; FPS 1–5 (15 genera miles de fotos).
+Auto-label → revisar → export YOLO.
+Impacto
+Descargas YouTube más estables y en mejor calidad.
+Extracción de frames usable de verdad (antes a menudo 0 imágenes).
+Menos basura de frames repetidos → mejor auto-label / entrenamiento.
+AMD sin CUDA, con UI en español y guías claras.
+SPANISH lenguage include
+----------------------------------------------------------------------------------
+
 # Yoable
 
 **English** | [日本語](#日本語) | [Русский](#русский) | [简体中文](#简体中文)
